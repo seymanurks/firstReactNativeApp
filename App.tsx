@@ -9,11 +9,12 @@ const App = () => {
 
   return(
     <SafeAreaView>
-      <View style= {{backgroundColor: "yellow"}}>
+      <View style= {{backgroundColor: "deepskyblue"}}>
          <Text>Hello World!</Text>
          <Button 
           title="Click" 
-          onPress={clickButton}>
+          onPress={clickButton}
+          color = "crimson">
          </Button>
        </View>
     </SafeAreaView>
