@@ -6,7 +6,7 @@ const App = () => {
     <SafeAreaView>
       <View style= {{backgroundColor: "yellow"}}>
          <Text>Hello World!</Text>
-         <Button title="Click" onPress={() => {}}></Button>
+         <Button title="Click" onPress={() => console.log("Butona tıklandı")}></Button>
        </View>
     </SafeAreaView>
   )
