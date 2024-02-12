@@ -1,5 +1,5 @@
 import React from "react";
-import {View, SafeAreaView, Text, Button} from "react-native";
+import {View, SafeAreaView, Text, StyleSheet} from "react-native";
 
 const App = () => {
 
@@ -9,16 +9,22 @@ const App = () => {
 
   return(
     <SafeAreaView>
-      <View style= {{backgroundColor: "deepskyblue"}}>
+      <View style = {styles.container}>
          <Text>Hello World!</Text>
-         <Button 
-          title="Click" 
-          onPress={clickButton}
-          color = "crimson">
-         </Button>
        </View>
     </SafeAreaView>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: "skyblue",
+    margin: 10,
+    padding: 10,
+    borderRadius: 15
+  }, 
+
+})
+
 
 export default App;
