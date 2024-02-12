@@ -5,12 +5,10 @@ const App = () => {
 
   return(
     <SafeAreaView style = {styles.container}>
-      <View style = {styles.top_view_container}>
-         <Text>First part</Text>
-       </View>
-       <View style = {styles.bottom_view_container}>
-         <Text>Second part</Text>
-       </View>
+      <View style = {styles.blue_container}/>
+      <View style = {styles.pink_container}/>
+      <View style = {styles.blue_container}/>
+      <View style = {styles.pink_container}/>
     </SafeAreaView>
   )
 }
@@ -18,15 +16,20 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: "column",
+    backgroundColor: "lightyellow",
+    justifyContent: "space-between"
   }, 
-  top_view_container: {
-    flex: 1,
-    backgroundColor: "skyblue"
+  blue_container: {
+    backgroundColor: "skyblue",
+    width: 100,
+    height: 100
 
   }, 
-  bottom_view_container: {
-    flex: 1,
-    backgroundColor: "pink"
+  pink_container: {
+    backgroundColor: "pink",
+    width: 100,
+    height: 100
   }
 
 })
