@@ -3,14 +3,13 @@ import {View, SafeAreaView, Text, StyleSheet} from "react-native";
 
 const App = () => {
 
-  const clickButton = () => {
-    console.log("Kullanıcı butona tıkladı")
-  }
-
   return(
-    <SafeAreaView>
-      <View style = {styles.container}>
-         <Text>Hello World!</Text>
+    <SafeAreaView style = {styles.container}>
+      <View style = {styles.top_view_container}>
+         <Text>First part</Text>
+       </View>
+       <View style = {styles.bottom_view_container}>
+         <Text>Second part</Text>
        </View>
     </SafeAreaView>
   )
@@ -18,11 +17,17 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "skyblue",
-    margin: 10,
-    padding: 10,
-    borderRadius: 15
+    flex: 1,
   }, 
+  top_view_container: {
+    flex: 1,
+    backgroundColor: "skyblue"
+
+  }, 
+  bottom_view_container: {
+    flex: 1,
+    backgroundColor: "pink"
+  }
 
 })
 
