@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     backgroundColor: "lightyellow",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    alignItems: "center"
   }, 
   blue_container: {
     backgroundColor: "skyblue",
